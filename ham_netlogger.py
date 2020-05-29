@@ -5,14 +5,13 @@ from re import sub
 
 
 class HamNetlogger():
-    '''
-    A python class to handle the netlogger.org api, which will query active and past net and their checkins.
+    
+    # A python class to handle the netlogger.org api, which will query active and past net and their checkins.
 
-    API details can be found. Please ensure that you're following netlogger's rules for usage of their API:
-    http://www.netlogger.org/api/The%20NetLogger%20XML%20Data%20Service%20Interface%20Specification.pdf
+    # API details can be found. Please ensure that you're following netlogger's rules for usage of their API:
+    # http://www.netlogger.org/api/The%20NetLogger%20XML%20Data%20Service%20Interface%20Specification.pdf
 
-    Justin Sligh, 2020
-    '''
+    # Justin Sligh, 2020
 
     def __init__(self):
         self.baseurl = 'http://www.netlogger.org/api/'
@@ -145,8 +144,6 @@ class HamNetlogger():
         else:
             print('Error in HamNetlogger. Unknown endpoint')
             return None
-
-        print(url)
 
         response = get(url, headers=self.headers)
 
