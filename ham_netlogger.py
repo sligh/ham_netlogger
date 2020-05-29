@@ -17,24 +17,6 @@ class HamNetlogger():
     def __init__(self):
         self.baseurl = 'http://www.netlogger.org/api/'
         self.headers = {'Content-Type': 'application/xml', 'Cache-Control': 'no-cache'}
-        self.bands = [({'band': '160m', 'prefix': ['1']},
-                       {'band': '80m', 'prefix': ['3', '4']},
-                       {'band': '75m', 'prefix': ['3', '4']},
-                       {'band': '60m', 'prefix': ['5']},
-                       {'band': '40m', 'prefix': ['7']},
-                       {'band': '30m', 'prefix': ['10']},
-                       {'band': '20m', 'prefix': ['14']},
-                       {'band': '17m', 'prefix': ['18']},
-                       {'band': '15m', 'prefix': ['21']},
-                       {'band': '12m', 'prefix': ['24']},
-                       {'band': '10m', 'prefix': ['28', '29']},
-                       {'band': '6m', 'prefix': ['50', '54']},
-                       {'band': '2m', 'prefix': ['144', '148']},
-                       {'band': '1.25m', 'prefix': ['222', '225']},
-                       {'band': '70cm', 'prefix': ['420', '450']},
-                       {'band': '33cm', 'prefix': ['902', '928']},
-                       {'band': '23cm', 'prefix': ['1240', '1300']}
-                       )]
         self.servers = []
         self.nets = []
         self.date_format = '%Y-%m-%d %H:%M:%S'
